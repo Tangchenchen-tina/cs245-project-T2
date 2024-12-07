@@ -1,0 +1,11 @@
+{
+    "queries": [
+        "how many number one hit songs does lady gaga have?"
+    ],
+    "ground_truths": [
+        "7"
+    ],
+    "predictions": [
+        "**Number of Number One Hit Songs**\n\nAccording to various sources, Lady Gaga has had **one** number one hit song on the Billboard Hot 100 chart:\n\n* \"Bad Romance\" (2009)\n\nHowever, another source also mentions that \"Poker Face\" reached number one as well, making it **two**.\n\nYet another source states that a single song (\"Bad Romance\") and another song ( \"Applause\" ) both debuted at number one on the Billboard Hot 100 chart."
+    ]
+}
