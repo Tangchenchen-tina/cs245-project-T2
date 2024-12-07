@@ -9,6 +9,7 @@ import vllm
 from blingfire import text_to_sentences_and_offsets
 from bs4 import BeautifulSoup
 from sentence_transformers import SentenceTransformer
+from llama_index.core.node_parser import SentenceSplitter
 
 from openai import OpenAI
 
@@ -17,9 +18,9 @@ from tqdm import tqdm
 #### CONFIG PARAMETERS ---
 
 # Define the number of context sentences to consider for generating an answer.
-NUM_CONTEXT_SENTENCES = 20
-# Set the maximum length for each context sentence (in characters).
-MAX_CONTEXT_SENTENCE_LENGTH = 1000
+NUM_CONTEXT_CHUNKS = 20
+CHUNK_SIZE = 1280
+CHUNK_OVERLAP = 0
 # Set the maximum context references length (in characters).
 MAX_CONTEXT_REFERENCES_LENGTH = 2000
 
@@ -36,6 +37,17 @@ SENTENTENCE_TRANSFORMER_BATCH_SIZE = 32 # TUNE THIS VARIABLE depending on the si
 #### CONFIG PARAMETERS END---
 
 class ChunkExtractor:
+    def __init__(self, chunk_size, chunk_overlap):
+        """
+        Initialize ChunkExtractor with SentenceSplitter.
+        
+        Parameters:
+            chunk_size (int): Maximum number of characters in each chunk.
+            chunk_overlap (int): Number of overlapping characters between consecutive chunks.
+        """
+        self.sentence_splitter = SentenceSplitter(
+            chunk_size=chunk_size, chunk_overlap=chunk_overlap
+        )
 
     @ray.remote
     def _extract_chunks(self, interaction_id, html_source):
@@ -47,7 +59,7 @@ class ChunkExtractor:
             html_source (str): HTML content from which to extract text.
 
         Returns:
-            Tuple[str, List[str]]: A tuple containing the interaction ID and a list of sentences extracted from the HTML content.
+            Tuple[str, List[str]]: A tuple containing the interaction ID and a list of chunks extracted from the HTML content.
         """
         # Parse the HTML content using BeautifulSoup
         soup = BeautifulSoup(html_source, "lxml")
@@ -57,17 +69,8 @@ class ChunkExtractor:
             # Return a list with empty string when no text is extracted
             return interaction_id, [""]
 
-        # Extract offsets of sentences from the text
-        _, offsets = text_to_sentences_and_offsets(text)
-
-        # Initialize a list to store sentences
-        chunks = []
-
-        # Iterate through the list of offsets and extract sentences
-        for start, end in offsets:
-            # Extract the sentence and limit its length
-            sentence = text[start:end][:MAX_CONTEXT_SENTENCE_LENGTH]
-            chunks.append(sentence)
+        # Use SentenceSplitter to split the text into chunks
+        chunks = self.sentence_splitter.split_text(text)
 
         return interaction_id, chunks
 
@@ -138,7 +141,7 @@ class RAGModel:
     """
     def __init__(self, llm_name="meta-llama/Llama-3.2-3B-Instruct", is_server=False, vllm_server=None):
         self.initialize_models(llm_name, is_server, vllm_server)
-        self.chunk_extractor = ChunkExtractor()
+        self.chunk_extractor = ChunkExtractor(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
 
     def initialize_models(self, llm_name, is_server, vllm_server):
         self.llm_name = llm_name
@@ -274,7 +277,7 @@ class RAGModel:
 
             # and retrieve top-N results.
             retrieval_results = relevant_chunks[
-                (-cosine_scores).argsort()[:NUM_CONTEXT_SENTENCES]
+                (-cosine_scores).argsort()[:NUM_CONTEXT_CHUNKS]
             ]
             
             # You might also choose to skip the steps above and 

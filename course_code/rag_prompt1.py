@@ -21,7 +21,7 @@ NUM_CONTEXT_SENTENCES = 20
 # Set the maximum length for each context sentence (in characters).
 MAX_CONTEXT_SENTENCE_LENGTH = 1000
 # Set the maximum context references length (in characters).
-MAX_CONTEXT_REFERENCES_LENGTH = 2000
+MAX_CONTEXT_REFERENCES_LENGTH = 4000
 
 # Batch size you wish the evaluators will use to call the `batch_generate_answer` function
 AICROWD_SUBMISSION_BATCH_SIZE = 1 # TUNE THIS VARIABLE depending on the number of GPUs you are requesting and the size of your model.
@@ -41,6 +41,10 @@ class ChunkExtractor:
     def _extract_chunks(self, interaction_id, html_source):
         """
         Extracts and returns chunks from given HTML source.
+
+        Note: This function is for demonstration purposes only.
+        We are treating an independent sentence as a chunk here,
+        but you could choose to chunk your text more cleverly than this.
 
         Parameters:
             interaction_id (str): Interaction ID that this HTML source belongs to.
@@ -248,7 +252,7 @@ class RAGModel:
         chunks, chunk_interaction_ids = self.chunk_extractor.extract_chunks(
             batch_interaction_ids, batch_search_results
         )
-        # import pdb; pdb.set_trace()
+
         # Calculate all chunk embeddings
         chunk_embeddings = self.calculate_embeddings(chunks)
 
@@ -283,6 +287,7 @@ class RAGModel:
             
         # Prepare formatted prompts from the LLM        
         formatted_prompts = self.format_prompts(queries, query_times, batch_retrieval_results)
+
         # Generate responses via vllm
         # note that here self.batch_size = 1
         if self.is_server:
@@ -323,7 +328,12 @@ class RAGModel:
         - query_times (List[str]): A list of query_time strings corresponding to each query.
         - batch_retrieval_results (List[str])
         """        
-        system_prompt = "You are provided with a question and various references. Your task is to answer the question succinctly, using the fewest words possible. If the references do not contain the necessary information to answer the question, respond with 'I don't know'. There is no need to explain the reasoning behind your answers."
+        system_prompt = """
+          1. You are a highly efficient AI assistant that provides short, direct answers. You are provided with a question and various references. Your task is to answer the question succinctly, using the fewest words possible. 
+          2. If the query starts with "is" or is asking about "Yes/No", "True/False", or "Choose one between several answers", choose the most likely answer and respond directly.
+          3. If the query is open-ended, try to find the most relevant information from the context and answer concisely.
+          4. If the references do not contain the necessary information to answer the question, respond with 'I don't know'. There is no need to explain the reasoning behind your answers.
+        """
         formatted_prompts = []
 
         for _idx, query in enumerate(queries):

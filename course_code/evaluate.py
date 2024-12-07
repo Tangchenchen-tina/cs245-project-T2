@@ -76,10 +76,15 @@ if __name__ == "__main__":
                                  "data/crag_task_1_dev_v4_release.jsonl.bz2", # full data
                                  ])
 
+    parser.add_argument("--pred_save_path", type=str, default="predictions.json")
+
     parser.add_argument("--model_name", type=str, default="vanilla_baseline",
                         choices=["vanilla_baseline",
-                                 "rag_baseline"
-                                 # add your model here
+                                 "rag_baseline",
+                                 "rag_chunk",
+                                 "rag_prompt1",
+                                 "rag_prompt2",
+                                 "graphrag"# add your model here
                                  ],
                         )
 
@@ -119,7 +124,8 @@ if __name__ == "__main__":
         raise FileNotFoundError(f"Output directory {output_directory} does not exist.")
 
     # load predictions
-    predictions_file = os.path.join(output_directory, "predictions.json")
+    predictions_file = os.path.join(output_directory, args.pred_save_path)
+    print("predictions_file: ", predictions_file)
     results = json.load(open(predictions_file))
 
     # Evaluate predictions

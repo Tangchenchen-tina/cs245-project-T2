@@ -13,7 +13,7 @@ from loguru import logger
 
 # VLLM Parameters 
 VLLM_TENSOR_PARALLEL_SIZE = 1 # TUNE THIS VARIABLE depending on the number of GPUs you are requesting and the size of your model.
-VLLM_GPU_MEMORY_UTILIZATION = 0.85 # TUNE THIS VARIABLE depending on the number of GPUs you are requesting and the size of your model.
+VLLM_GPU_MEMORY_UTILIZATION = 1 # TUNE THIS VARIABLE depending on the number of GPUs you are requesting and the size of your model.
 
 #### CONFIG PARAMETERS END---
 

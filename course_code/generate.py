@@ -68,7 +68,9 @@ def generate_predictions(dataset_path, model, split):
     queries, ground_truths, predictions = [], [], []
     batch_size = model.get_batch_size()
 
-    for batch in tqdm(load_data_in_batches(dataset_path, batch_size, split), desc="Generating predictions"):
+    for batch_index,batch in enumerate(tqdm(load_data_in_batches(dataset_path, batch_size, split), desc="Generating predictions")):
+        # if batch_index > 9:
+        #     break
         batch_ground_truths = batch.pop("answer")  # Remove answers from batch and store them
         batch_predictions = model.batch_generate_answer(batch)
 
@@ -86,13 +88,19 @@ if __name__ == "__main__":
                         choices=["example_data/dev_data.jsonl.bz2", # example data
                                  "data/crag_task_1_dev_v4_release.jsonl.bz2", # full data
                                  ])
+
+    parser.add_argument("--pred_save_path", type=str, default="predictions.json")
+
     parser.add_argument("--split", type=int, default=-1,
                         help="The split of the dataset to use. This is only relevant for the full data: "
                              "0 for public validation set, 1 for public test set")
 
     parser.add_argument("--model_name", type=str, default="vanilla_baseline",
                         choices=["vanilla_baseline",
-                                 "rag_baseline"
+                                 "rag_baseline",
+                                 "rag_chunk",
+                                 "rag_prompt1",
+                                 "rag_prompt2"
                                  # add your model here
                                  ],
                         )
@@ -130,6 +138,15 @@ if __name__ == "__main__":
     elif model_name == "rag_baseline":
         from rag_baseline import RAGModel
         model = RAGModel(llm_name=llm_name, is_server=args.is_server, vllm_server=args.vllm_server)
+    elif model_name == "rag_chunk":
+        from rag_chunk import RAGModel
+        model = RAGModel(llm_name=llm_name, is_server=args.is_server, vllm_server=args.vllm_server)
+    elif model_name == "rag_prompt1":
+        from rag_prompt1 import RAGModel
+        model = RAGModel(llm_name=llm_name, is_server=args.is_server, vllm_server=args.vllm_server)
+    elif model_name == "rag_prompt2":
+        from rag_prompt2 import RAGModel
+        model = RAGModel(llm_name=llm_name, is_server=args.is_server, vllm_server=args.vllm_server)
     # elif model_name == "your_model":
     #     add your model here
     else:
@@ -144,4 +161,4 @@ if __name__ == "__main__":
 
     # save predictions
     json.dump({"queries": queries, "ground_truths": ground_truths, "predictions": predictions},
-              open(os.path.join(output_directory, "predictions.json"), "w"), indent=4)
+              open(os.path.join(output_directory, args.pred_save_path), "w"), indent=4)
