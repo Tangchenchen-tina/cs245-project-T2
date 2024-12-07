@@ -1,0 +1,527 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="order" attr.type="long"/>
+<key id="d5" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d4" for="edge" attr.name="description" attr.type="string"/>
+<key id="d3" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d2" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d1" for="node" attr.name="description" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="&quot;PROJECT GUTENBERG&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Project Gutenberg is an online library offering free eBooks, including 'A Christmas Carol', under its license."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;CHARLES DICKENS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Charles Dickens is the author of 'A Christmas Carol', known for his significant contributions to English literature."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;ARTHUR RACKHAM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Arthur Rackham is the illustrator of the edition of 'A Christmas Carol' mentioned in the text, known for his detailed illustrations."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;UNITED STATES&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"United States is a country where the Project Gutenberg eBooks can be freely accessed without restrictions under specific licenses."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;A CHRISTMAS CAROL&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"A Christmas Carol is a novel written by Charles Dickens, focusing on the redemption of Ebenezer Scrooge through supernatural visitations."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;PHILADELPHIA AND NEW YORK&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Philadelphia and New York are locations where the Lippincott Company originally published 'A Christmas Carol' in 1915."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;BOB CRATCHIT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Bob Cratchit is Scrooge's clerk, known for his humble and hopeful nature, and his joy in small pleasures like going down a slide during Christmas Eve."&lt;SEP&gt;"Bob Cratchit is a clerk working for Ebenezer Scrooge and is a key character in 'A Christmas Carol' known for his humble and kind nature."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5&lt;SEP&gt;chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;PETER CRATCHIT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Peter Cratchit is one of Bob Cratchit's sons, featured in 'A Christmas Carol'."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;TINY TIM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Tiny Tim is the youngest son of Bob Cratchit, depicted as a crippled child with a hopeful spirit in 'A Christmas Carol'."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MR. FEZZIWIG&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mr. Fezziwig is a jovial and kind-hearted merchant who was Ebenezer Scrooge's employer during his apprenticeship."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;FRED&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Fred is Ebenezer Scrooge's cheerful and optimistic nephew who invites Scrooge to Christmas dinner."&lt;SEP&gt;"Fred is Scrooge's nephew. Scrooge refers to Fred when trying to join him for dinner."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89&lt;SEP&gt;chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;GHOST OF CHRISTMAS PAST&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Ghost of Christmas Past is a phantom in 'A Christmas Carol' that takes Scrooge on a journey through his own past."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;GHOST OF CHRISTMAS PRESENT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Ghost of Christmas Present is a spirit showing Scrooge the current Christmas celebrations and fostering generosity."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;GHOST OF CHRISTMAS YET TO COME&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Ghost of Christmas Yet to Come is an apparition that reveals future consequences to Scrooge."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;GHOST OF JACOB MARLEY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Ghost of Jacob Marley is the spectre of Scrooge's former business partner, who warns him of the forthcoming spirits."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;JOE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Joe is a character mentioned in a conversation about bed-curtains, reflecting a casual, perhaps humorous nature."&lt;SEP&gt;"Joe is a marine-store dealer in 'A Christmas Carol' known for receiving stolen goods."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89&lt;SEP&gt;chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;EBENEZER SCROOGE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Ebenezer Scrooge is the main character in 'A Christmas Carol', a miserly and covetous old man undergoing redemption."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MR. TOPPER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mr. Topper is a bachelor who appears in 'A Christmas Carol' during the scenes in Fred's house."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;DICK WILKINS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Dick Wilkins was a fellow apprentice of Scrooge during his younger days."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;BELLE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Belle is a character in 'A Christmas Carol' who was once engaged to Scrooge."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;CAROLINE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Caroline is the wife of one of Ebenezer Scrooge's debtors."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MRS. CRATCHIT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mrs. Cratchit is the wife of Bob Cratchit, portrayed as a caring mother in 'A Christmas Carol'."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;BELINDA CRATCHIT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Belinda Cratchit is one of the daughters of Bob Cratchit."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MARTHA CRATCHIT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Martha Cratchit is one of Bob Cratchit's daughters, portrayed in 'A Christmas Carol'."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MRS. DILBER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mrs. Dilber is a laundress appearing in 'A Christmas Carol'."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;FAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Fan is the sister of Ebenezer Scrooge, who is depicted in scenes from Scrooge's past."</data>
+  <data key="d2">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;MRS. FEZZIWIG&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mrs. Fezziwig is associated with Old Fezziwig, participating in dancing, suggesting a warm and festive personality."&lt;SEP&gt;"Mrs. Fezziwig is the wife of Mr. Fezziwig and known for her kindness and cheerful spirit."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89&lt;SEP&gt;chunk-9e3921da66da5d761ab73cd849af6c43</data>
+</node>
+<node id="&quot;SCROOGE&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Scrooge is a central character known for his disdain for Christmas and reluctance to engage in familial and social interactions, particularly with his nephew."&lt;SEP&gt;"Scrooge is a central character known for his grumpy and miserly behavior, particularly dismissive of the Christmas spirit."&lt;SEP&gt;"Scrooge is a central character known for his miserly and unsympathetic attitude towards charity and Christmas. He is presented as being dismissive of efforts to alleviate poverty."&lt;SEP&gt;"Scrooge is a cold, solitary, and miserly character known for his tight-fisted and covetous nature. He is a central figure in the story and was a partner in the firm Scrooge and Marley."&lt;SEP&gt;"Scrooge is characterized as a miserly, solitary, and cold-hearted individual who is resistant to warmth, both literally and metaphorically. He takes pleasure in keeping others at a distance, especially during Christmas time, which he dismisses as humbug."&lt;SEP&gt;"Scrooge is the main character in the passage, known for his skepticism and lack of fear, living in a dark and quiet environment."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5&lt;SEP&gt;chunk-90d5764e301321c087f5a8f78b73a145&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0&lt;SEP&gt;chunk-090793539b3e263069f57afa991264d4&lt;SEP&gt;chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+</node>
+<node id="&quot;MARLEY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Marley is Scrooge's deceased business partner, whose ghostly face appears on the door knocker, initiating a transformative journey for Scrooge."&lt;SEP&gt;"Marley is a deceased person from Scrooge's past whose memory haunts Scrooge during the narrative."&lt;SEP&gt;"Marley was Scrooge's business partner, who has died. He is described as a key figure whose death sets the stage for events in the story."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5&lt;SEP&gt;chunk-89777b838d5447c7bd1ec11282c4ee89&lt;SEP&gt;chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;ST. PAUL'S CHURCHYARD&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"St. Paul's Churchyard is a location mentioned as a hypothetical place where a ghost might walk, used to illustrate a point in the narrative."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+</node>
+<node id="&quot;MARLEY'S FUNERAL&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Marley's Funeral is a significant event confirming Marley's death, setting up the premise of the story."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+</node>
+<node id="&quot;OLD FEZZIWIG&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Old Fezziwig is depicted as a jovial character who stands out to dance with Mrs. Fezziwig, indicating a lively and spirited nature."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+</node>
+<node id="&quot;TIM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Tim is referenced as having a 'blood-horse,' possibly indicating a young character with a lively or spirited nature."</data>
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+</node>
+<node id="&quot;SCROOGE'S NEPHEW&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Scrooge's Nephew is described as cheerful and spirited, with a ruddy and handsome appearance. He attempts to bring warmth and good cheer to Scrooge by wishing him a Merry Christmas."&lt;SEP&gt;"Scrooge's nephew is a persistent and optimistic character who values Christmas and seeks a relationship with his uncle despite repeated rejections."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+</node>
+<node id="&quot;THE CLERK&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Clerk is Scrooge's employee, shown to be expectant and possibly underappreciated, illustrating the power dynamics in Scrooge's office."&lt;SEP&gt;"The Clerk works for Scrooge in his counting-house and is depicted as being under harsh conditions with very little warmth, indicative of Scrooge’s miserly nature."&lt;SEP&gt;"The Clerk works for Scrooge, sympathizes with the nephew's views on Christmas, and is noted for returning holiday greetings more warmly than Scrooge."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0&lt;SEP&gt;chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;CHRISTMAS&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Christmas is a holiday that is a significant focal point in the story, associated with themes of charity, goodwill, and family, though viewed negatively by Scrooge."&lt;SEP&gt;"Christmas is an annual holiday that Scrooge dismisses as humbug, while others, like his nephew, celebrate it with warmth and joy."&lt;SEP&gt;"Christmas is the festive season during which the events of the text take place, highlighting themes of charity and celebration."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0&lt;SEP&gt;chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;SCROOGE'S COUNTING-HOUSE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Scrooge's Counting-House is the workplace of Scrooge and his clerk, described as a cold and dismal place reflecting Scrooge's character."</data>
+  <data key="d2">chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+</node>
+<node id="&quot;MR. MARLEY&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Mr. Marley was Scrooge's business partner, deceased for seven years, remembered for his business reputation and implied to have been more liberal than Scrooge."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+</node>
+<node id="&quot;THE PORTLY GENTLEMEN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Two gentlemen who visit Scrooge's office seeking donations for the poor, emphasizing the importance of charity during the festive season."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+</node>
+<node id="&quot;SCROOGE AND MARLEY'S&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Scrooge and Marley's is the business once co-owned by Scrooge and his deceased partner Mr. Marley."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+</node>
+<node id="&quot;BEDLAM&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Bedlam, or Bethlehem Hospital, is referenced by Scrooge when he derogatorily speaks of his clerk, highlighting Scrooge's disdain for expressions of holiday cheer."</data>
+  <data key="d2">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+</node>
+<node id="&quot;THE GENTLEMAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Gentleman is involved in charitable efforts to raise funds for the poor during the festive season. He interacts with Scrooge while trying to solicit donations for the needy."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;UNION WORKHOUSES&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Union Workhouses are institutions mentioned by Scrooge as places where the poor can go for aid, reflecting the social systems of the time."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;THE TREADMILL&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Treadmill is referred to as a means of discipline and a part of the poor law system, illustrating the harsh measures faced by the impoverished."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;POOR LAW&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Poor Law represents the administrative framework designed to provide assistance to the impoverished, highlighting the societal structures in place for dealing with poverty."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;THE LORD MAYOR&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Lord Mayor is an official who instructs his household to celebrate Christmas in a festive manner, indicating authority and social status."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;ST. DUNSTAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"St. Dunstan is referenced as a historical figure, used metaphorically to personify the harsh weather."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;MANSION HOUSE&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Mansion House is the residence of the Lord Mayor, indicating a location associated with authority and celebration during Christmas."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;FROST&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Frost in the context of the text reflects the intense cold and harsh weather conditions prevailing in the setting."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;THE SINGER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Singer is a character who attempts to spread holiday cheer by singing a Christmas carol but is chased away by Scrooge."</data>
+  <data key="d2">chunk-90d5764e301321c087f5a8f78b73a145</data>
+</node>
+<node id="&quot;CAMDEN TOWN&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Camden Town is the location where Bob Cratchit resides and to which he hurries home to enjoy time with his family."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;CITY OF LONDON&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"City of London is the broader setting where Scrooge lives and works, contributing to his unyielding demeanor."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;CHRISTMAS EVE&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Christmas Eve is the significant holiday around which the story unfolds, highlighting contrasting attitudes and behaviors between characters."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;MARLEY'S GHOST&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Marley's Ghost refers to the supernatural event where Scrooge's deceased partner appears on the door knocker, a forewarning of things to come."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;THE COUNTING-HOUSE&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Counting-House is Scrooge's place of business, where he conducts his financial dealings and interacts with Bob Cratchit."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;SCROOGE'S CHAMBERS&quot;">
+  <data key="d0">"GEO"</data>
+  <data key="d1">"Scrooge's Chambers are his gloomy and isolated living quarters where he experiences supernatural events."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;THE FOG AND FROST&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Fog and Frost indicate the harsh weather conditions surrounding Scrooge's living area, symbolizing his cold demeanor and bleak outlook."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;A COUNTING-HOUSE CLERK&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"A Counting-House Clerk, referring implicitly to Bob Cratchit, represents the underpaid and overworked employees of Scrooge."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;THE KNOCKER&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The Knocker is an ordinary object on Scrooge's door that becomes supernatural by displaying the face of Marley's Ghost."</data>
+  <data key="d2">chunk-d9aac3484185ac66045df92214d245d5</data>
+</node>
+<node id="&quot;DUTCH MERCHANT&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"The Dutch Merchant is the unspecified entity who built Scrooge's fireplace, long ago."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;DUTCH TILES&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Dutch Tiles are illustrations around Scrooge's fireplace, depicting various religious and historical scenes that capture his thoughts."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;PHARAOH'S DAUGHTER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Pharaoh's Daughter is depicted on one of the Dutch tiles, adding to the rich imagery surrounding Scrooge."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;QUEEN OF SHEBA&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Queen of Sheba is showcased on the Dutch tiles that adorn Scrooge's fireplace, representing historical and biblical narratives."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;ANGELIC MESSENGERS&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Angelic Messengers are figures depicted on the Dutch tiles, descending through the air, part of the illustrative scenes."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;ABRAHAM&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Abraham is one of the biblical figures illustrated on the Dutch tiles around Scrooge's fireplace."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;BELSHAZZAR&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Belshazzar is a historical figure depicted on the Dutch tiles, contributing to the narrative imagery."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;APOSTLES&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Apostles are depicted on the Dutch tiles, seen in butter-boats, forming part of the religious imagery."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;ANCIENT PROPHET'S ROD&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Ancient Prophet's Rod is a metaphor used to describe the overpowering presence of Marley's face in Scrooge's thoughts."</data>
+  <data key="d2">chunk-090793539b3e263069f57afa991264d4</data>
+</node>
+<node id="&quot;BED-CURTAINS&quot;">
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d1">"Joe is part of a conversation concerning bed-curtains, highlighting his role in a lighthearted exchange."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;CHURCH&quot;">
+  <data key="d2">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d1">"Tim is associated with a 'blood-horse' from church, indicating a significant event or journey related to the church."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<edge source="&quot;PROJECT GUTENBERG&quot;" target="&quot;A CHRISTMAS CAROL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Project Gutenberg provides 'A Christmas Carol' as a free eBook, allowing widespread access to Dickens's work."</data>
+  <data key="d5">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;PROJECT GUTENBERG&quot;" target="&quot;UNITED STATES&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Project Gutenberg operates in the United States providing free eBooks within legal parameters."</data>
+  <data key="d5">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;ARTHUR RACKHAM&quot;" target="&quot;A CHRISTMAS CAROL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Arthur Rackham illustrated the edition of 'A Christmas Carol' mentioned, bringing visual interpretations to the story."</data>
+  <data key="d5">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;A CHRISTMAS CAROL&quot;" target="&quot;PHILADELPHIA AND NEW YORK&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"'A Christmas Carol' was originally published by Lippincott Company in Philadelphia and New York."</data>
+  <data key="d5">chunk-9e3921da66da5d761ab73cd849af6c43</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BOB CRATCHIT&quot;" target="&quot;SCROOGE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Scrooge is Bob Cratchit's employer, interacting with him concerning work expectations and holiday time-off issues."</data>
+  <data key="d5">chunk-d9aac3484185ac66045df92214d245d5</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;BOB CRATCHIT&quot;" target="&quot;CAMDEN TOWN&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Bob Cratchit resides in Camden Town, and despite his modest circumstances, he finds joy there with his family."</data>
+  <data key="d5">chunk-d9aac3484185ac66045df92214d245d5</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;FRED&quot;" target="&quot;SCROOGE&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Scrooge intends to have dinner with Fred, indicating a familial relationship."</data>
+  <data key="d5">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;JOE&quot;" target="&quot;BED-CURTAINS&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"Joe is part of a conversation concerning bed-curtains, highlighting his role in a lighthearted exchange."</data>
+  <data key="d5">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MRS. FEZZIWIG&quot;" target="&quot;OLD FEZZIWIG&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Old Fezziwig and Mrs. Fezziwig are partners in dancing, suggesting a close personal or marital relationship."</data>
+  <data key="d5">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;MARLEY&quot;">
+  <data key="d3">25.0</data>
+  <data key="d4">"Scrooge and Marley were long-term business partners, and Scrooge was Marley's sole executor and mourner."&lt;SEP&gt;"Scrooge experiences a supernatural moment involving Marley, his deceased partner, which serves as a catalyst for his character's change."&lt;SEP&gt;"Scrooge's thoughts are haunted by the memory of Marley, who has been dead for seven years."</data>
+  <data key="d5">chunk-d9aac3484185ac66045df92214d245d5&lt;SEP&gt;chunk-89777b838d5447c7bd1ec11282c4ee89&lt;SEP&gt;chunk-090793539b3e263069f57afa991264d4</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;SCROOGE'S NEPHEW&quot;">
+  <data key="d3">15.0</data>
+  <data key="d4">"Scrooge and his nephew have a familial relationship characterized by contrasting views on Christmas, with Scrooge being dismissive and his nephew being cheerful and spirited."&lt;SEP&gt;"Scrooge's Nephew frequently tries to engage Scrooge amicably, especially around Christmas, but is consistently rebuffed."</data>
+  <data key="d5">chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;CHRISTMAS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Scrooge has a negative attitude towards Christmas, viewing it as an inconvenience and a time for financial burdens."</data>
+  <data key="d5">chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;THE CLERK&quot;">
+  <data key="d3">15.0</data>
+  <data key="d4">"Scrooge is the employer of the Clerk, who quietly supports the nephew's cheerful view on Christmas."&lt;SEP&gt;"The Clerk works under Scrooge in unfavorable conditions, with Scrooge controlling even the coal for warmth."</data>
+  <data key="d5">chunk-5dac41b3f9eeaf794f0147400b1718cd&lt;SEP&gt;chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;THE PORTLY GENTLEMEN&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"The Portly Gentlemen approach Scrooge in hopes of receiving a charitable donation, but are met with resistance."</data>
+  <data key="d5">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;MR. MARLEY&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Mr. Marley was Scrooge's previous business partner and is implied to have had a more charitable nature than Scrooge."</data>
+  <data key="d5">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;THE GENTLEMAN&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Scrooge and the Gentleman have a conversation where the Gentleman attempts to collect donations for the poor, but is rebuffed by Scrooge's lack of generosity."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;UNION WORKHOUSES&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Scrooge mentions Union Workhouses as institutions he believes the poor should be sent to, reflecting his unsympathetic stance on poverty."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;THE TREADMILL&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Scrooge references The Treadmill as part of his view on how the poor should be managed, reinforcing his rigid approach to social issues."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;POOR LAW&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Scrooge's views on the Poor Law highlight his belief in strict measures for dealing with people in poverty, aligning with his character's harsh demeanor."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;CITY OF LONDON&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Scrooge's personality is partially shaped by the metropolitan atmosphere of the City of London where he resides."</data>
+  <data key="d5">chunk-d9aac3484185ac66045df92214d245d5</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;CHRISTMAS EVE&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Scrooge's negative attitude towards Christmas Eve contrasts with the joyous nature of the event and sets the stage for his eventual transformation."</data>
+  <data key="d5">chunk-d9aac3484185ac66045df92214d245d5</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;SCROOGE&quot;" target="&quot;DUTCH TILES&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The images on the Dutch Tiles capture Scrooge's thoughts, drawing his attention away from the memory of Marley."</data>
+  <data key="d5">chunk-090793539b3e263069f57afa991264d4</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MARLEY&quot;" target="&quot;MARLEY'S FUNERAL&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Marley's Funeral establishes the confirmation of Marley's death, which is crucial for the story."</data>
+  <data key="d5">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;TIM&quot;" target="&quot;CHURCH&quot;">
+  <data key="d3">5.0</data>
+  <data key="d4">"Tim is associated with a 'blood-horse' from church, indicating a significant event or journey related to the church."</data>
+  <data key="d5">chunk-89777b838d5447c7bd1ec11282c4ee89</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;THE CLERK&quot;" target="&quot;SCROOGE'S COUNTING-HOUSE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Clerk works in Scrooge's Counting-House, where his discomfort reflects the stingy nature of the environment."</data>
+  <data key="d5">chunk-74e2466de2f67fd710ef2f20c0a8d9e0</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;MR. MARLEY&quot;" target="&quot;SCROOGE AND MARLEY'S&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Mr. Marley was one of the founders of Scrooge and Marley's, a business now solely owned by Scrooge since Marley's death."</data>
+  <data key="d5">chunk-5dac41b3f9eeaf794f0147400b1718cd</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;THE GENTLEMAN&quot;" target="&quot;UNION WORKHOUSES&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The Gentleman challenges the concept of Union Workhouses as he advocates for more humane treatment of the poor, contrasting with Scrooge's view."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="&quot;THE LORD MAYOR&quot;" target="&quot;MANSION HOUSE&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Lord Mayor utilizes Mansion House as the setting for festive Christmas celebrations, reflecting his power and affluence."</data>
+  <data key="d5">chunk-90d5764e301321c087f5a8f78b73a145</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>
